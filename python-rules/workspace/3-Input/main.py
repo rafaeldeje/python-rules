@@ -1,4 +1,4 @@
-#Aprenderemos hoje sobre a função INPUT onde a maquina pede ao usuario uma resposta para o programa,
+#É uma função que permite que o usuário forneça informações a um programa. Ela exibe uma mensagem, aguarda a entrada do usuário e retorna o que o usuário digitou.
 #O programa em si gera a resposta à maquina como string, é preciso fazer uma conversão ou cast
 
 nome = input("Digite seu nome: ")
