@@ -1,0 +1,32 @@
+import os
+
+mensagens = []
+#criamos essa lista
+
+nome = input("Nome: ")
+#aqui inserimos o nome do usuario que vai entrar ao chat
+
+while True:
+#aqui criamos uma repetição infinita, enquanto seja verdadeiro
+
+    #usando a importação do os. Limpando o terminal
+    os.system('cls')
+
+    #se a lista for maior que 0, faremos um for na lista de mensagens, e printaremos o nome e texto que vai ser exibido
+    if len(mensagens) > 0:
+        for m in mensagens:
+            print(m['nome'], "-", m['texto'])
+
+    print("____________")
+    #apenas para dividir o espaco de tela do usuario com mensagens enviadas
+
+    #obtendo o texto
+    texto = input("mensagem: ")
+    if texto == "fim":
+        break
+
+    #adicionando mensagem à lista
+    mensagens.append({
+        "nome": nome,
+        "texto": texto
+    })
